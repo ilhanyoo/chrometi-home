@@ -47,6 +47,11 @@
 #neardia-home .nh-brand-narrative-copy p{font-size:14px;line-height:2;color:#776781;word-break:keep-all}
 #neardia-home .nh-brand-narrative-copy p+p{margin-top:20px}
 #neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:19px;font-weight:600;line-height:1.85;color:#493f57}
+#neardia-home .nh-brand-narrative-copy strong{font-weight:600;color:#574660}
+#neardia-home .nh-name-signature{display:flex;flex-direction:column;gap:9px;margin-top:28px;padding-left:18px;border-left:2px solid #c8b7dc;color:#776781;font-size:14px;line-height:1.6}
+#neardia-home .nh-name-signature>strong{font-size:24px;letter-spacing:-.035em;color:#6f577e}
+#neardia-home .nh-name-signature>strong>span{margin-left:8px;font-size:13px;font-weight:400;letter-spacing:0}
+#neardia-home .nh-name-signature b{font-weight:600;color:#6f577e}
 @media(max-width:1100px){#neardia-home .nh-brand-narrative{gap:40px}}
 @media(max-width:800px){#neardia-home .nh-brand-narrative{grid-template-columns:1fr;gap:26px;margin-bottom:38px;padding-bottom:35px}#neardia-home .nh-brand-narrative-copy{padding:0}#neardia-home .nh-brand-narrative h2{font-size:36px}}
 @media(max-width:520px){#neardia-home .nh-brand-narrative h2{font-size:32px}#neardia-home .nh-brand-narrative-copy p{font-size:13px}#neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:17px}#neardia-home .nh-brand-narrative-copy p+p{margin-top:17px}}
@@ -58,3 +63,9 @@
 #neardia-home .nh-official-site>span{font-size:11px;color:#776781}
 #neardia-home .nh-website-cta{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:24px}
 #neardia-home .nh-website-cta>span{font-size:11px;color:#776781;letter-spacing:.02em}
+
+#neardia-home .nh-home-explanation>.nh-eyebrow{font-size:10px;color:#8f7ba7;line-height:1.7;margin-bottom:12px}
+#neardia-home .nh-home-explanation h3{font-size:22px;margin-bottom:17px;word-break:keep-all}
+#neardia-home .nh-home-explanation>p+p{margin-top:16px}
+#neardia-home .nh-home-explanation strong{color:#574660;font-weight:600}
+@media(max-width:520px){#neardia-home .nh-home-explanation h3{font-size:20px}}
