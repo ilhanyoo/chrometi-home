@@ -17,7 +17,7 @@ Neardia Home은 **곧 오픈 예정**으로 안내하며, 홈페이지에서는 
 
 ## Neardia 로고
 
-- 로고 이야기: `services/neardia.html#nh-brand-story`
+- 브랜드 이야기: `services/neardia.html#nh-brand-story`
 - 벡터 원본: `assets/neardia/brand/vector/` (SVG, PDF / 글자까지 경로로 구성)
 - 투명 PNG: `assets/neardia/brand/logo/`
 - 심벌·앱 아이콘: `assets/neardia/brand/icon/`
