@@ -49,8 +49,9 @@
 #neardia-home .nh-brand-narrative-copy{padding-top:5px}
 #neardia-home .nh-brand-narrative-copy p{font-size:14px;line-height:2;color:#776781;word-break:keep-all}
 #neardia-home .nh-brand-narrative-copy p+p{margin-top:20px}
-#neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:19px;font-weight:600;line-height:1.85;color:#493f57}
+#neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:19px;font-weight:400;line-height:1.85;color:#493f57}
 #neardia-home .nh-brand-narrative-copy strong{font-weight:600;color:#574660}
+#neardia-home .nh-brand-narrative-copy .nh-brand-definition strong{font-weight:700}
 #neardia-home .nh-name-signature{--nh-name-size:44px;display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 18px;margin-top:30px;line-height:1.25}
 #neardia-home .nh-name-signature>strong{font-size:var(--nh-name-size);white-space:nowrap}
 #neardia-home .nh-name-neardia{font-family:NeardiaSans,sans-serif;font-weight:700;letter-spacing:-.045em;color:#6f577e}
