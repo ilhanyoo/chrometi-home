@@ -1,4 +1,7 @@
 /* Neardia identity: all logo artwork is an outlined, font-independent SVG. */
+/* Jua subset for 다시곁. Copyright 2018 The Jua Project Authors.
+   SIL Open Font License 1.1: assets/neardia/brand/font/OFL-Jua.txt */
+@font-face{font-family:DasigyeotBrand;src:url('assets/neardia/brand/font/dasigyeot-jua.woff') format('woff');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+ACC1,U+B2E4,U+C2DC}
 #neardia-home .nh-brand img.nh-brand-lockup{width:264px;height:auto}
 #neardia-home .nh-footer .nh-brand img.nh-brand-lockup{width:224px;height:auto}
 #neardia-home .nh-brand-centered img.nh-brand-lockup{width:330px;height:auto}
@@ -48,10 +51,15 @@
 #neardia-home .nh-brand-narrative-copy p+p{margin-top:20px}
 #neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:19px;font-weight:600;line-height:1.85;color:#493f57}
 #neardia-home .nh-brand-narrative-copy strong{font-weight:600;color:#574660}
-#neardia-home .nh-name-signature{display:flex;flex-direction:column;gap:9px;margin-top:28px;padding-left:18px;border-left:2px solid #c8b7dc;color:#776781;font-size:14px;line-height:1.6}
-#neardia-home .nh-name-signature>strong{font-size:24px;letter-spacing:-.035em;color:#6f577e}
-#neardia-home .nh-name-signature>strong>span{margin-left:8px;font-size:13px;font-weight:400;letter-spacing:0}
-#neardia-home .nh-name-signature b{font-weight:600;color:#6f577e}
+#neardia-home .nh-name-signature{--nh-name-size:44px;display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 18px;margin-top:30px;line-height:1.25}
+#neardia-home .nh-name-signature>strong{font-size:var(--nh-name-size);white-space:nowrap}
+#neardia-home .nh-name-neardia{font-family:NeardiaSans,sans-serif;font-weight:700;letter-spacing:-.045em;color:#6f577e}
+#neardia-home .nh-name-dasigyeot{font-family:DasigyeotBrand,NeardiaSans,sans-serif;font-weight:400;font-synthesis:none;letter-spacing:.01em;color:#b35e75}
+#neardia-home .nh-name-divider{align-self:center;color:#cbb7c6;font-size:20px;line-height:1}
+#neardia-home .nh-name-signature.nh-name-signature-hero{--nh-name-size:28px;gap:10px 13px;margin:0 0 20px}
+@media(max-width:1100px){#neardia-home .nh-name-signature{--nh-name-size:38px;gap:10px 14px}}
+@media(max-width:520px){#neardia-home .nh-name-signature{--nh-name-size:36px;gap:10px 12px;margin-top:25px}#neardia-home .nh-name-signature.nh-name-signature-hero{--nh-name-size:26px}}
+@media(max-width:360px){#neardia-home .nh-name-signature{--nh-name-size:32px;gap:10px}}
 @media(max-width:1100px){#neardia-home .nh-brand-narrative{gap:40px}}
 @media(max-width:800px){#neardia-home .nh-brand-narrative{grid-template-columns:1fr;gap:26px;margin-bottom:38px;padding-bottom:35px}#neardia-home .nh-brand-narrative-copy{padding:0}#neardia-home .nh-brand-narrative h2{font-size:36px}}
 @media(max-width:520px){#neardia-home .nh-brand-narrative h2{font-size:32px}#neardia-home .nh-brand-narrative-copy p{font-size:13px}#neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:17px}#neardia-home .nh-brand-narrative-copy p+p{margin-top:17px}}
