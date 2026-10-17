@@ -1,0 +1,45 @@
+.brand-story{margin:80px 0 88px;padding:0 0 30px;border-top:1px solid #94a6fe;border-bottom:1px solid #49495d;scroll-margin-top:26px}
+.brand-story-label{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px}
+.brand-story-label .eyebrow{font-size:11px;letter-spacing:2px;color:#b3bfff}
+.brand-story-label>span{font-size:11px;color:#aaa8b9;letter-spacing:.4px}
+.brand-story-main{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px;align-items:center;padding:50px 0 52px}
+.brand-story-symbol{margin:0;min-width:0;text-align:center}
+.brand-symbol-field{position:relative;isolation:isolate;padding:18px 0;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.brand-symbol-field::before{content:'';position:absolute;inset:-4%;z-index:-1;background:radial-gradient(ellipse at center,#7771cb21,transparent 69%)}
+.brand-symbol-field img{width:100%;height:auto}
+.brand-story-symbol figcaption{margin-top:15px}
+.brand-story-symbol figcaption>span{font-size:24px;font-weight:550;letter-spacing:5px;color:#e8e6ef}
+.brand-story-symbol small{display:block;font-family:Georgia,serif;font-size:16px;font-style:italic;letter-spacing:.2px;color:#9b96b3;margin-top:12px}
+.brand-story-copy{min-width:0}
+.brand-story h2{font-size:clamp(52px,5.6vw,74px);line-height:1.14;letter-spacing:-3px;font-weight:500;word-break:keep-all}
+.brand-story h2 em{font-style:normal;color:#a7a1ff}
+.brand-story-promise{font-size:19px;line-height:1.6;letter-spacing:-.5px;margin-top:27px;color:#e1ddeb;word-break:keep-all}
+.brand-story-intro{font-size:14px;line-height:1.9;color:#ada9bc;margin-top:13px;word-break:keep-all}
+.brand-name-formula{display:flex;align-items:center;gap:17px;margin-top:35px;font-size:28px;letter-spacing:1px;line-height:1.4;color:#e9e6f4}
+.brand-name-formula b{font-size:24px;font-weight:400;color:#8881a8}
+.brand-name-meanings{display:grid;grid-template-columns:1fr 1.2fr;gap:25px;border-top:1px solid #3c394d;margin-top:16px;padding-top:20px}
+.brand-name-meanings dt{font-size:11px;font-weight:600;letter-spacing:1px;color:#c3bbef;line-height:1.7}
+.brand-name-meanings dt span{display:block;font-size:12px;letter-spacing:0;font-weight:400;color:#a8a2b8;margin-top:4px}
+.brand-name-meanings dd{font-size:13px;line-height:1.9;color:#b3acbf;margin-top:11px;word-break:keep-all}
+.brand-name-meanings dd strong{font-weight:450;color:#e3dfed}
+.brand-logo-story{border-top:1px solid #383443;padding-top:29px}
+.brand-logo-story-heading{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-bottom:26px}
+.brand-logo-story-heading .eyebrow{font-size:9px;letter-spacing:1.7px;color:#9791ac}
+.brand-logo-story-heading h3{font-size:15px;font-weight:400;letter-spacing:-.3px;color:#ccc6d9}
+.brand-symbol-meanings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:42px}
+.brand-symbol-meanings dt{display:flex;align-items:center;gap:17px;min-height:49px;font-size:17px;font-weight:500}
+.brand-symbol-meanings dt small{display:block;font-size:10px;font-weight:400;color:#9b91b4;letter-spacing:.3px;margin-top:6px}
+.brand-symbol-meanings dd{font-size:13px;line-height:1.9;color:#aaa4b7;margin-top:15px;word-break:keep-all}
+.brand-mark-c{font-size:41px;line-height:1;font-weight:650;letter-spacing:-3px;width:33px;color:#94a6fe}
+.brand-mark-dot{width:21px;height:21px;border-radius:50%;background:#94a6fe;margin:0 6px;flex-shrink:0}
+.brand-mark-color{width:30px;height:30px;border:1px solid #b1b1ff;background:#94a6fe;border-radius:4px;flex-shrink:0}
+.brand-story-purpose{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #383443;margin-top:37px;padding-top:26px}
+.brand-story-purpose p{font-size:12px;line-height:1.8;color:#9690a5;word-break:keep-all}
+.brand-story-purpose em{font-style:normal;color:#d6ceeb}
+.brand-story+.studio{margin-top:0}
+@media(max-width:1000px){.brand-story-main{grid-template-columns:.75fr 1.25fr;gap:40px;padding:43px 0}.brand-story h2{font-size:59px}.brand-story-promise{font-size:17px}.brand-story-intro{font-size:13px}.brand-story-intro br{display:none}.brand-name-formula{font-size:25px;gap:14px}.brand-name-meanings{gap:20px}.brand-name-meanings dd{font-size:12px}.brand-name-meanings dd br{display:none}.brand-symbol-meanings{gap:28px}.brand-symbol-meanings dd{font-size:12px}.brand-story-purpose{gap:24px}.brand-story-purpose p{font-size:11px}}
+@media(max-width:700px){
+ .brand-story{margin:49px 0 54px;padding-bottom:26px;scroll-margin-top:21px}.brand-story-label{padding-top:19px;gap:14px}.brand-story-label .eyebrow{font-size:10px;letter-spacing:1.5px}.brand-story-label>span{font-size:10px;letter-spacing:0}.brand-story-main{grid-template-columns:minmax(0,1fr);gap:27px;padding:23px 0 33px}.brand-story-symbol{display:flex;align-items:center;gap:18px;text-align:left}.brand-symbol-field{width:134px;flex-shrink:0;padding:0}.brand-story-symbol figcaption{margin:0}.brand-story-symbol figcaption>span{font-size:19px;letter-spacing:3px}.brand-story-symbol small{font-size:13px;letter-spacing:0;margin-top:8px}.brand-story h2{font-size:clamp(49px,10.5vw,67px);line-height:1.15;letter-spacing:-2.3px}.brand-story-promise{font-size:17px;letter-spacing:-.5px;margin-top:22px}.brand-story-intro{font-size:13px;margin-top:12px;line-height:1.9}.brand-name-formula{font-size:25px;gap:15px;letter-spacing:.6px;margin-top:29px}.brand-name-formula b{font-size:23px}.brand-name-meanings{gap:21px;grid-template-columns:1fr 1fr;margin-top:15px;padding-top:18px}.brand-name-meanings dt{font-size:10px}.brand-name-meanings dt span{font-size:11px}.brand-name-meanings dd{font-size:12px;line-height:1.85;margin-top:10px}.brand-name-meanings dd strong{font-weight:500}.brand-logo-story{padding-top:25px}.brand-logo-story-heading{display:block;margin-bottom:25px}.brand-logo-story-heading .eyebrow{font-size:8px;letter-spacing:1.2px}.brand-logo-story-heading h3{font-size:15px;line-height:1.7;margin-top:10px}.brand-symbol-meanings{grid-template-columns:minmax(0,1fr);gap:26px}.brand-symbol-meanings>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px;align-items:start}.brand-symbol-meanings dt{font-size:14px;gap:11px;min-height:46px}.brand-symbol-meanings dt small{font-size:9px;line-height:1.5;margin-top:4px;white-space:nowrap}.brand-symbol-meanings dd{font-size:12px;line-height:1.85;margin:0}.brand-mark-c{font-size:32px;width:25px;letter-spacing:-2px}.brand-mark-dot{width:16px;height:16px;margin:0 4px}.brand-mark-color{width:24px;height:24px}.brand-story-purpose{display:block;margin-top:29px;padding-top:21px}.brand-story-purpose p{font-size:12px;line-height:2.05}
+}
+@media(max-width:360px){.brand-story-symbol{gap:10px}.brand-symbol-field{width:116px}.brand-story-symbol figcaption>span{font-size:17px;letter-spacing:2.5px}.brand-story-symbol small{font-size:12px}.brand-story h2{font-size:48px;letter-spacing:-2.2px}.brand-story-promise{font-size:16px}.brand-name-formula{font-size:22px;gap:13px}.brand-name-meanings{gap:16px}.brand-symbol-meanings>div{grid-template-columns:100px minmax(0,1fr);gap:14px}.brand-symbol-meanings dt{gap:9px;font-size:13px}.brand-symbol-meanings dd{font-size:11px}.brand-story-label>span{font-size:9px}}
+@media print{.brand-story{margin:40px 0;break-inside:avoid}.brand-symbol-field::before{display:none}}
