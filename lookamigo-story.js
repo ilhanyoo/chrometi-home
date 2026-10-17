@@ -27,22 +27,30 @@
     document.querySelectorAll('[data-outfit-panel]').forEach(panel => panel.hidden = panel.dataset.outfitPanel !== button.dataset.outfit);
   }));
   const magazinePages = [
-    ['표지', 'LookAmigo 여성 룩북 표지. 라일락 니트 코디와 나의 옷장 네 가지 장면 제목'],
-    ['스타일 노트', '여성 룩북 스타일 노트. 라일락 니트와 네이비 스커트의 사진과 코디 설명'],
-    ['코디 모음', '여성 룩북의 두 코디. 데님 재킷과 크림 팬츠, 베이지 재킷과 블랙 팬츠'],
-    ['마지막 룩', '여성 룩북 마지막 페이지. 네이비 원피스와 아이보리 니트의 코디 설명']
+    {label:'표지',alt:'햇살이 드는 중정의 라일락 카디건과 네이비 스커트. 사진 위에 한글 코디 해설이 들어간 LookAmigo 매거진 표지',kicker:'01 / THE COURTYARD',title:'라일락과 네이비, 부드러움에 깊이를 더하다.',copy:'얼굴 가까이 밝은 카디건을 두고, 짙은 A라인 스커트로 중심을 잡았어요. 흰 스니커즈가 일상적인 경쾌함을 더합니다.'},
+    {label:'데님',alt:'성수의 벽돌 거리를 배경으로 데님 재킷과 크림 팬츠를 입은 여성. 전신과 재킷 및 로퍼 확대 사진, 번호별 한글 코디 설명',kicker:'02 / SEONGSU STREET',title:'짧은 재킷, 길게 흐르는 실루엣.',copy:'데님의 질감 아래 크림 팬츠를 길게 떨어뜨렸어요. 재킷의 길이와 허리선, 베이지 로퍼까지 번호별 디테일로 살펴보세요.'},
+    {label:'테일러링',alt:'갤러리에서 베이지 재킷과 블랙 팬츠를 입은 여성. SOFT POWER 제목과 소매, 가방, 시계에 대한 사진 속 스타일 노트',kicker:'03 / THE GALLERY',title:'부드러운 재킷에, 단정한 중심.',copy:'베이지와 블랙의 차분한 대비에 브라운 소품을 더했어요. 걷어 올린 소매와 작은 시계가 테일러링을 편안한 일상복으로 바꿉니다.'},
+    {label:'이브닝',alt:'노을빛 서울 루프톱의 네이비 원피스와 아이보리 니트 착장. 탄 컬러 가방 확대 사진과 어깨 위 니트에 대한 한글 설명',kicker:'04 / THE GOLDEN HOUR',title:'네이비 위에 내려앉은 아이보리.',copy:'어깨에 두른 밝은 니트로 얼굴 주변에 빛을 더하고, 탄 컬러 가방과 크림 슈즈로 따뜻하게 연결했어요. 해 질 무렵에 어울리는 조합입니다.'}
   ];
   const magazineButtons = [...document.querySelectorAll('[data-magazine-page]')];
-  magazineButtons.forEach(button => button.addEventListener('click', () => {
-    const page = Number(button.dataset.magazinePage), data = magazinePages[page - 1];
-    magazineButtons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+  let magazinePage = 1;
+  function selectMagazinePage(page) {
+    magazinePage = ((page - 1 + magazinePages.length) % magazinePages.length) + 1;
+    const data = magazinePages[magazinePage - 1];
+    magazineButtons.forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.magazinePage) === magazinePage)));
     const image = document.getElementById('magazine-page-image'), link = document.getElementById('magazine-preview-link');
-    image.src = `../assets/lookamigo/lookbook-page-${page}.webp`;
-    image.alt = data[1]; link.href = image.src;
-    link.dataset.previewTitle = `여성 룩북 샘플 · ${data[0]}`;
-    link.setAttribute('aria-label', `여성 룩북 샘플 ${data[0]} 크게 보기`);
-    document.getElementById('magazine-page-status').textContent = `0${page} / 04 · ${data[0]}`;
-  }));
+    image.src = `../assets/lookamigo/editorial-page-${magazinePage}.webp`;
+    image.alt = data.alt;
+    link.href = image.src;
+    link.dataset.previewTitle = `LookAmigo 매거진 룩북 · ${data.label}`;
+    link.setAttribute('aria-label', `LookAmigo 매거진 룩북 ${data.label} 크게 보기`);
+    document.getElementById('magazine-page-status').textContent = `0${magazinePage} / 04 · ${data.label}`;
+    document.getElementById('magazine-note-kicker').textContent = data.kicker;
+    document.getElementById('magazine-note-title').textContent = data.title;
+    document.getElementById('magazine-note-copy').textContent = data.copy;
+  }
+  magazineButtons.forEach(button => button.addEventListener('click', () => selectMagazinePage(Number(button.dataset.magazinePage))));
+  document.querySelectorAll('[data-magazine-step]').forEach(button => button.addEventListener('click', () => selectMagazinePage(magazinePage + Number(button.dataset.magazineStep))));
   const verdicts = {
     0: ['구매를 고려해도 좋아요', '같은 카테고리·색상의 보유 옷이 없어 새로운 조합을 넓힐 수 있는 후보입니다.'],
     1: ['구매는 신중히 고려하세요', '소재나 핏에 필요한 차이가 있는지 비교한 뒤 결정하세요.'],

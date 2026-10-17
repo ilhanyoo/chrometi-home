@@ -167,3 +167,35 @@
 @media(max-width:760px){.hero-garments{max-width:290px;margin-top:25px}.hero-garments figcaption{font-size:9px}.wardrobe-to-looks{grid-template-columns:minmax(0,1fr);gap:30px}.wardrobe-source .product-screen{max-width:460px}.wardrobe-source-pieces{max-width:300px;gap:12px}.wardrobe-source-pieces img{aspect-ratio:1/1}.wardrobe-connection{margin-top:18px;padding-top:17px}.wardrobe-connection br{display:none}.wardrobe-connection strong{margin-left:5px}.wardrobe-connection>span{top:13px}.wardrobe-result-pair{gap:12px}.wardrobe-result h3{font-size:16px}.wardrobe-result p{font-size:11px}.wardrobe-result p b{display:block;margin-top:5px}.wardrobe-result figcaption>span{font-size:8px;letter-spacing:.6px}.mode-instruction{font-size:12px}.mode-experience .mode-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.mode-result{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:20px;padding:22px}.mode-result .mode-copy h3{font-size:27px;margin-top:14px}.mode-result .mode-copy>p:not(.eyebrow){font-size:13px;margin-top:14px}.mode-outfit-details{margin-top:19px}.mode-outfit-details>div{grid-template-columns:77px 1fr;padding:12px 0;gap:9px}.mode-outfit-details dd{font-size:12px}.mode-number{margin-top:18px;font-size:10px}.mode-result-photo .single-look{max-width:330px}.mode-result-photo figcaption{font-size:11px}.context-flow{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:25px}.context-flow i{display:none}.context-flow span{font-size:12px}.context-examples{grid-template-columns:minmax(0,1fr);gap:26px}.context-card-heading{padding:23px 22px 0}.context-card-heading h3{font-size:27px}.context-signals{margin:21px 22px;gap:9px}.context-signals dd{font-size:11px}.context-example figure{margin:0 10px}.context-reason{padding:24px 22px}.context-reason h4{font-size:21px}.context-personal{font-size:13px}.context-example .photo-expand{font-size:10px;bottom:12px;right:12px}}
 @media(max-width:360px){.mode-result{padding:18px}.mode-outfit-details>div{grid-template-columns:minmax(0,1fr);gap:5px}.wardrobe-result h3{font-size:15px}.context-card-heading,.context-reason{padding-left:18px;padding-right:18px}.context-signals{margin-left:18px;margin-right:18px;grid-template-columns:1fr}.context-signals>div{display:flex;gap:12px}.context-signals dt{margin:0;min-width:26px}.context-signals dd{font-size:12px}.context-card-heading h3{font-size:25px}}
 @media(max-width:760px){.mode-result-photo{grid-row:1}.mode-result .mode-copy{grid-row:2}.mode-result-photo .single-look{max-width:280px}}
+
+/* Editorial lookbook: generous page size, visual index and readable style notes. */
+.editorial-layout{grid-template-columns:minmax(0,1.45fr) minmax(280px,.75fr);gap:48px;align-items:start}
+.editorial-layout .magazine-paper{padding:0;border:0;border-radius:0;background:none}
+.editorial-layout .magazine-paper a{box-shadow:0 18px 50px #0006}
+.editorial-layout .magazine-paper img{aspect-ratio:210/297}
+.editorial-tabs{margin:0 0 16px;gap:6px}
+.editorial-tabs button{padding:12px 6px;border-radius:2px;font-size:12px;min-height:44px}
+.magazine-navigation{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:15px}
+.magazine-navigation button{border:1px solid #514859;border-radius:3px;background:transparent;color:var(--product-accent);padding:10px 14px;min-height:44px;cursor:pointer;font:inherit;font-size:12px}
+.magazine-navigation .magazine-page-status{margin:0;font-size:11px}
+.editorial-guide{padding-top:0}.editorial-guide>.eyebrow{font-size:9px;letter-spacing:1.7px;color:var(--product-accent)}
+.editorial-guide .editorial-title{font-size:clamp(43px,4.6vw,64px);margin-top:20px}
+.editorial-guide .lookbook-lead{font-size:15px;margin-top:20px}
+.magazine-thumbnails{display:grid;grid-template-columns:1fr 1fr;gap:16px 12px;margin:29px 0}
+.magazine-thumbnails button{background:transparent;border:1px solid #49414f;padding:5px;cursor:pointer;color:#c5bccf;text-align:left;transition:border-color .15s}
+.magazine-thumbnails img{display:block;width:100%;height:auto;aspect-ratio:210/297;object-fit:contain}
+.magazine-thumbnails span{display:block;padding:9px 3px 5px;font-size:10px;line-height:1.6;word-break:keep-all}
+.magazine-thumbnails button[aria-pressed=true]{border-color:#d5c8fb;box-shadow:0 0 0 1px #d5c8fb;color:#efe8ff}
+.editorial-style-note{border-top:1px solid #4c4354;padding-top:22px;margin-bottom:25px}
+.editorial-style-note .eyebrow{font-size:9px;color:var(--product-accent)}
+.editorial-style-note h3{font-size:19px;line-height:1.6;letter-spacing:-.5px;margin:12px 0;word-break:keep-all;font-weight:500}
+.editorial-style-note p:last-child{font-size:12px;line-height:1.95;color:var(--muted);word-break:keep-all}
+.editorial-guide .lookbook-download .button{font-size:12px;width:100%;justify-content:space-between;padding:15px 18px}
+.magazine-process{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;padding:0;margin:45px 0 0}
+.magazine-process li{border-top:1px solid #4a4252;padding-top:21px}
+.magazine-process span{font-size:9px;color:var(--product-accent);letter-spacing:1px}
+.magazine-process h3{font-size:15px;font-weight:500;line-height:1.6;word-break:keep-all;margin:14px 0 8px}
+.magazine-process p{font-size:12px;line-height:1.9;color:var(--muted);word-break:keep-all}
+@media(max-width:1000px){.editorial-layout{grid-template-columns:minmax(0,1.35fr) minmax(235px,.75fr);gap:28px}.editorial-guide .editorial-title{font-size:48px}.magazine-process{gap:18px}.magazine-process h3{font-size:14px}}
+@media(max-width:760px){.editorial-layout{grid-template-columns:minmax(0,1fr);gap:32px}.editorial-tabs button{font-size:11px;padding:11px 3px}.magazine-enlarge{font-size:9px;right:8px;bottom:8px}.editorial-guide .editorial-title{font-size:52px}.magazine-thumbnails{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:24px 0}.magazine-thumbnails span{font-size:9px;padding:7px 1px 3px}.magazine-thumbnails button{padding:3px}.magazine-process{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;margin-top:30px}.editorial-style-note h3{font-size:21px}.editorial-style-note p:last-child{font-size:13px}.magazine-navigation .magazine-page-status{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.magazine-thumbnails button{transition:none}}
