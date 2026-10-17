@@ -50,3 +50,11 @@
 @media(max-width:1100px){#neardia-home .nh-brand-narrative{gap:40px}}
 @media(max-width:800px){#neardia-home .nh-brand-narrative{grid-template-columns:1fr;gap:26px;margin-bottom:38px;padding-bottom:35px}#neardia-home .nh-brand-narrative-copy{padding:0}#neardia-home .nh-brand-narrative h2{font-size:36px}}
 @media(max-width:520px){#neardia-home .nh-brand-narrative h2{font-size:32px}#neardia-home .nh-brand-narrative-copy p{font-size:13px}#neardia-home .nh-brand-narrative-copy .nh-brand-definition{font-size:17px}#neardia-home .nh-brand-narrative-copy p+p{margin-top:17px}}
+
+/* Official destination, clearly labelled while the service is preparing to open. */
+#neardia-home .nh-official-site{display:flex;align-items:center;flex-wrap:wrap;gap:8px 18px;margin-top:16px}
+#neardia-home .nh-official-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;font-size:15px;font-weight:600;color:#70548b;border-bottom:1px solid #b5a1c6;letter-spacing:0}
+#neardia-home .nh-official-link:hover{color:#493f57;border-color:#70548b}
+#neardia-home .nh-official-site>span{font-size:11px;color:#776781}
+#neardia-home .nh-website-cta{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:24px}
+#neardia-home .nh-website-cta>span{font-size:11px;color:#776781;letter-spacing:.02em}
