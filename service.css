@@ -1,6 +1,6 @@
 .service-page{--product-accent:#a6b8ff;--product-soft:#dfe5ff}
 .service-videoudit{--product-accent:#ff6b65;--product-soft:#ffdbd8}
-.service-lookamigo{--product-accent:#b9aaff;--product-soft:#ebe5ff}
+.service-lookamigo{--product-accent:#a9cdb3;--product-soft:#d5e0d7}
 .breadcrumb{display:flex;align-items:center;gap:14px;padding-top:24px;font-size:12px;line-height:1.7;color:var(--muted)}
 .breadcrumb a:hover{color:var(--product-accent)}
 .breadcrumb [aria-current]{color:var(--ink)}
