@@ -12,7 +12,7 @@
 .service-videoudit .evidence-toolbar{background:#2a2219}
 .service-dit{--product-accent:#c6f432;--product-soft:#dce3ff}
 
-/* Price line under a hero ("830원", "커피 한 잔") */
+/* Price line under a hero ("로또 한 장보다", "커피 한 잔") */
 .price-hook{display:flex;gap:12px;align-items:flex-start;margin-top:22px;max-width:460px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:13px;line-height:1.7;color:#dce1eb;word-break:keep-all}
 .price-hook b{flex:none;font-size:10px;letter-spacing:1px;color:var(--product-accent);padding-top:3px}
 
