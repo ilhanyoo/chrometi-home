@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101216">
-  <meta name="description" content="크로메티는 AI를 활용한 마케팅 도구와 콘텐츠, 새로운 일상의 경험을 만듭니다. AIOudit, VIDEOudit, LookAmigo와 오픈 준비 중인 Neardia Home을 만나보세요.">
+  <meta name="description" content="크로메티는 AI를 활용한 마케팅 도구와 콘텐츠, 새로운 일상의 경험을 만듭니다. AIOudit, VIDEOudit과 두 서비스의 진단 로봇 딧(DIT), LookAmigo와 오픈 준비 중인 Neardia Home을 만나보세요.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="CHROMETI · 크로메티">
@@ -20,6 +20,7 @@
   <link rel="manifest" href="./site.webmanifest?v=chrometi-1">
   <link rel="stylesheet" href="./styles.css?v=services-2">
   <link rel="stylesheet" href="./brand-story.css?v=1">
+  <link rel="stylesheet" href="./dit.css?v=dit-1">
   <script src="./site.js?v=services-1" defer></script>
 </head>
 <body>
@@ -28,7 +29,7 @@
     <header class="header">
       <a class="wordmark" href="#top" aria-label="크로메티 맨 위로"><img src="./assets/chrometi-logo-on-dark.svg" alt="CHROMETI" width="1213" height="282" fetchpriority="high"></a>
       <nav class="nav" aria-label="주 메뉴">
-        <a href="#products">Products</a><a href="#brand-story">Brand</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
+        <a href="#products">Products</a><a href="#dit">DIT</a><a href="#brand-story">Brand</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
       </nav>
     </header>
     <main id="main" tabindex="-1">
@@ -49,13 +50,13 @@
         <a class="product-entry" href="./services/aioaudit.html" aria-label="AIOudit 서비스 소개 보기">
           <img src="./assets/aioaudit.png" alt="" width="56" height="56" class="product-entry-icon">
           <div class="product-entry-name"><h3>AIOudit</h3><span>서비스 소개</span></div>
-          <p>AI 검색 시대의 웹페이지 진단</p>
+          <p>AI 답변에 선택되는 웹페이지 진단</p>
           <span class="product-entry-action">자세히 보기 <span aria-hidden="true">→</span></span>
         </a>
         <a class="product-entry" href="./services/videoudit.html" aria-label="VIDEOudit 서비스 소개 보기">
-          <img src="./assets/videoudit.png?v=2610" alt="" width="56" height="56" class="product-entry-icon">
+          <img src="./assets/videoudit.png?v=2611" alt="" width="56" height="56" class="product-entry-icon">
           <div class="product-entry-name"><h3>VIDEOudit</h3><span>서비스 소개</span></div>
-          <p>유튜브 콘텐츠를 위한 개선 제안</p>
+          <p>AI가 듣고 읽는 유튜브·릴스 진단</p>
           <span class="product-entry-action">자세히 보기 <span aria-hidden="true">→</span></span>
         </a>
         <a class="product-entry" href="./services/lookamigo.html" aria-label="LookAmigo 서비스 소개 보기">
@@ -70,6 +71,20 @@
           <p>다시곁, 그리운 반려가족의 추억이 머무는 집</p>
           <span class="product-entry-action">소개 페이지 보기 <span aria-hidden="true">→</span></span>
         </a>
+      </section>
+
+      <section class="dit-band" id="dit" aria-labelledby="dit-heading" tabindex="-1">
+        <div>
+          <p class="eyebrow">Meet our character</p>
+          <h2 id="dit-heading">신호를 읽는 로봇,<br><em>딧(DIT)</em>.</h2>
+          <p class="dit-band-lead">AIOudit과 VIDEOudit이 함께 쓰는 진단 로봇이에요. 당신이 보낸 신호가 AI에게 닿았는지 먼저 확인하고, 닿지 않았다면 무엇을 고치면 되는지 알려 줘요.</p>
+          <p class="dit-morse" aria-label="모스부호로 쓴 DIT">−·· ·· − <span>두 서비스의 끝말 ‘dit’, 모스부호의 가장 짧은 신호 ‘·’</span></p>
+          <div class="dit-band-actions"><a class="button" href="./services/dit.html">딧 이야기 보기 <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="dit-pair">
+          <figure class="dit-card is-aio"><img src="./assets/dit/dit-aio-work.svg" alt="페이지 카드를 비추며 읽는 AIOudit의 딧" width="332" height="226" loading="lazy"><p class="dit-say">고객이 물어볼 만한 질문을 떠올리는 중이에요.</p><figcaption><b>AIOudit</b>페이지를 읽는 딧</figcaption></figure>
+          <figure class="dit-card is-video"><img src="./assets/dit/dit-video-work.svg" alt="영상 카드를 비추며 듣는 VIDEOudit의 딧" width="332" height="226" loading="lazy"><p class="dit-say">딧이 자막을 한 줄씩 듣고 있어요.</p><figcaption><b>VIDEOudit</b>영상을 듣는 딧</figcaption></figure>
+        </div>
       </section>
 
       <section class="brand-story" id="brand-story" aria-labelledby="brand-story-heading" tabindex="-1">

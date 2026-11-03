@@ -32,3 +32,13 @@ Chrometi 파비콘과 Neardia 서비스 아이콘을 사용합니다. 기존 `lo
 참고 이미지로 보관하고 현재 화면은 SVG 원본을 사용합니다.
 
 다시곁 브랜드 표기는 Neardia와 같은 글자 크기로 나란히 배치하며, 로즈 색상과 주아체를 사용합니다. 첫 화면과 브랜드 이야기에 적용한 주아체는 필요한 세 글자만 포함한 로컬 웹폰트입니다. 원본: https://github.com/google/fonts/tree/main/ofl/jua · 라이선스: `assets/neardia/brand/font/OFL-Jua.txt`.
+
+## 딧(DIT)
+
+AIOudit·VIDEOudit이 함께 쓰는 진단 로봇 캐릭터(2026-11-04).
+
+- 소개 페이지: `services/dit.html` (이름의 뜻, 태어난 이야기, 몸에 담긴 뜻, 두 서비스의 딧, 약속, 표정)
+- 메인 `index.html#dit` 섹션, AIOudit·VIDEOudit 소개 페이지의 ‘With DIT’ 섹션과 서비스 둘러보기 목록
+- 그림: `assets/dit/*.svg` — 움직임이 파일 안에 들어 있어 `<img>`로 써도 움직이며, 움직임 줄이기 설정이면 멈춤. 원본 그림 함수는 VIDEOudit 저장소 `dit.mjs`의 `ditSvg`
+- 스타일 `dit.css`, 소개 페이지 동작 `dit.js`
+- 서비스 소개 화면: `assets/screens/*-2611.jpg` (2026년 11월 화면)
