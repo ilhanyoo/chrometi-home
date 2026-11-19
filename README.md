@@ -12,6 +12,7 @@ ChatGPT Sites의 `chrometi.ilhanyoo.chatgpt.site`와는 별도 소스이므로, 
 - 홈페이지의 다섯 번째 앱: `index.html`
 - 출시 전 소개 페이지: `services/neardia.html`
 - 이미지와 글꼴: `assets/neardia/`
+- 하늘의 집 시안 이미지·영상: `assets/neardia/heaven/`
 
 Neardia Home은 **곧 오픈 예정**으로 안내합니다. Chrometi 메인에서는 소개 페이지로 연결하며, 소개 페이지의 브랜드 이야기와 하단 오픈 안내에서 공식 홈페이지 예정 주소 `https://neardia.com`을 새 창으로 엽니다.
 
