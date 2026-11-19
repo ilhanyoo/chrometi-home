@@ -291,6 +291,9 @@ v.addEventListener("timeupdate",()=>{
   let cur=null;chips.forEach(c=>{if(v.currentTime>=+c.dataset.t-0.05)cur=c});
   chips.forEach(c=>c.setAttribute("aria-pressed",c===cur));
 });
+
+function goHash(){const id=decodeURIComponent(location.hash.slice(1));if(!id)return;const t=document.getElementById(id);if(t)t.scrollIntoView({block:"start"});}
+if(location.hash){goHash();window.addEventListener("load",goHash);}
 </script>
 </body>
 </html>
